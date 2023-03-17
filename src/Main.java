@@ -9,7 +9,7 @@ public class Main {
             System.out.println("INPUT a string:");
             System.out.println("---------------------------");
             String input = scn.nextLine();
-            if (input == "X") {
+            if (input.toUpperCase().equals("EXIT")) {
                 scn.close();
                 System.out.println("Exiting program");
                 System.exit(0);
