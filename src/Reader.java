@@ -26,9 +26,7 @@ public class Reader {
         getCharacters(str);
         Boolean isAPalindrome = true;
         while (!queueList.isEmpty()) {
-            if (queueList.remove().equals(stackList.pop())) {
-                continue;
-            } else {
+            if (!queueList.remove().equals(stackList.pop())) {
                 isAPalindrome = false;
             }
         }
