@@ -28,6 +28,7 @@ public class Reader {
         while (!queueList.isEmpty()) {
             if (!queueList.remove().equals(stackList.pop())) {
                 isAPalindrome = false;
+                break;
             }
         }
         return isAPalindrome;
